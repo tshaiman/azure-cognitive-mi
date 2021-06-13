@@ -1,0 +1,21 @@
+﻿apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: face
+    aadpodidbinding: <your_aad_pod_binding_label>
+  name: face
+spec:
+  containers:
+  - image: face-demo:1.0
+    name: face
+    imagePullPolicy: IfNotPresent
+    resources: {}
+    env:
+    - name: AZURE_TENANT_ID
+      value: <your_azure_tenant_id>
+    - name:  AZURE_CLIENT_ID
+      value: <your_managed_identity_client_id>
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+

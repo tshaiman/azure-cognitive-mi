@@ -1,2 +1,6 @@
 # azure-cognitive-mi
-Azure cognitive-services demo with managed-identities
+Azure cognitive-services demo with managed-identities . 
+
+Original Article on Medium : 
+
+

@@ -1,0 +1,2 @@
+﻿ azure-cognitiveservices-vision-face
+ azure-identity
